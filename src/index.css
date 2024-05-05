@@ -1,13 +1,260 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ANDY BELLS CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+li {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* root styling */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: royalblue;
+}
+
+a:focus {
+  color: royalblue;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  padding-top: 1rem;
+}
+
+.links-display {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-inline: 2rem;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+@media (max-width: 575px) {
+  .menu {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .navbar {
+    display: flex;
+    min-width: 26rem;
+    padding: 2rem 2rem 0 1rem;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #000;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .open .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+  }
+
+  .links-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .menu.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 4px;
+    top: 20%;
+    z-index: 1;
+    left: 0rem;
+    background-color: #f5f6f7;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.623);
+  }
+
+  .menu.open ul {
+    padding: 0;
+  }
+
+  .menu.open ul li {
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* my info block */
+.info-container {
+  padding-top: 8%;
+}
+
+#personal-statement {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20%;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  #personal-statement {
+    min-width: 80%;
+    gap: 10%;
+  }
+}
+
+@media (max-width: 992px) {
+  #personal-statement {
+    min-width: 80%;
+    gap: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  #personal-statement {
+    min-width: 80%;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  #personal-statement {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    min-width: 80%;
+    gap: 5%;
+  }
+}
+
+@media (max-width: 360px) {
+  #personal-statement {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    min-width: 20rem;
+    margin-inline: 20%;
+    gap: 10%;
+  }
+}
+
+.self-portrait {
+  max-width: 20rem;
+  min-width: 20rem;
+  max-height: 20rem;
+  min-height: 20rem;
+  border-radius: 100rem;
+  background-image: url(./images/luffy-portrait.jpg);
+}
+
+@media (max-width: 1200px) {
+  .self-portrait {
+    max-width: 15rem;
+    min-width: 15rem;
+    max-height: 15rem;
+    min-height: 15rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .tech-stack {
+    margin-left: 7rem;
+  }
+}
+
+.tech-stack-bubble {
+  padding: 6px;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px rgba(160, 160, 160, 0.603);
+}
+
+@media (max-width: 360px) {
+  .tech-stack-bubble {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px rgba(160, 160, 160, 0.603);
+  }
+}
+
+/* projects */
+
+.projects-hand {
+  transform: rotate(180deg);
 }
