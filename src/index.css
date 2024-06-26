@@ -168,15 +168,33 @@ a:focus {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20%;
+  width: 70%;
   align-content: center;
   justify-content: center;
   margin: auto;
+}
+
+@media (max-width: 1366px) {
+  #secure-tcg-container {
+    margin-inline: auto
+  }
 }
 
 @media (max-width: 1200px) {
   #personal-statement {
     min-width: 80%;
     gap: 10%;
+  }
+
+  .self-portrait {
+    max-width: 15rem;
+    min-width: 15rem;
+    max-height: 15rem;
+    min-height: 15rem;
+  }
+
+  #tcg-secure-image3 {
+    display: none;
   }
 }
 
@@ -192,14 +210,25 @@ a:focus {
     min-width: 80%;
     gap: 5%;
   }
+
+  #tcg-secure-image2 {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
   #personal-statement {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    min-width: 80%;
+    text-align: center;
+    margin-inline: 2rem;
+    min-width: 90%;
     gap: 5%;
+  }
+
+  #github-icon,
+  #linkedin-icon {
+    width: 3rem;
   }
 }
 
@@ -207,9 +236,19 @@ a:focus {
   #personal-statement {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    min-width: 20rem;
+    text-align: center;
     margin-inline: 20%;
     gap: 10%;
+  }
+
+  .tech-stack,
+  .projects {
+    margin-left: 7rem;
+  }
+
+  #projects-container {
+    margin-left: 1rem;
+    width: 28rem;
   }
 }
 
@@ -222,21 +261,6 @@ a:focus {
   background-image: url(./images/luffy-portrait.jpg);
 }
 
-@media (max-width: 1200px) {
-  .self-portrait {
-    max-width: 15rem;
-    min-width: 15rem;
-    max-height: 15rem;
-    min-height: 15rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .tech-stack {
-    margin-left: 7rem;
-  }
-}
-
 .tech-stack-bubble {
   padding: 6px;
   border-radius: 4px;
@@ -244,17 +268,18 @@ a:focus {
   box-shadow: 1px 1px rgba(160, 160, 160, 0.603);
 }
 
-@media (max-width: 360px) {
-  .tech-stack-bubble {
-    padding: 4px;
-    border-radius: 4px;
-    background-color: whitesmoke;
-    box-shadow: 1px 1px rgba(160, 160, 160, 0.603);
-  }
+/* projects */
+#tcg-secure-image1,
+#tcg-secure-image2,
+#tcg-secure-image3 {
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 26rem;
+  height: 100%;
 }
 
-/* projects */
-
-.projects-hand {
-  transform: rotate(180deg);
+#tcg-secure-image1:hover,
+#tcg-secure-image2:hover,
+#tcg-secure-image3:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
