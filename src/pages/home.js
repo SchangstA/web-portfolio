@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Contact from '../components/contact'
 import Navbar from '../Navbar'
 import Github from '../images/CibGithub.svg'
 import Linkedin from "../images/CibLinkedin.svg"
@@ -8,30 +9,31 @@ import Html from "../images/CibHtml5.svg"
 import Css from "../images/CibCss3Shiled.svg"
 import ReactIcon from "../images/CibReact.svg"
 import MySqlIcon from "../images/DeviconPlainAzuresqldatabase.svg"
-import Ruby from "../images/CibRuby.svg"
-import PointDown from "../images/LaHandPointer.svg"
+import PhpIcon from "../images/MdiLanguagePhp.svg"
 import TcgSecureImg from '../images/SecureTcgImage.png'
 import TcgSecureShopImg from '../images/TcgSecureShopImage.png'
 import TcgSecureCartImg from '../images/TcgSecureCartImage.png'
+import BurgerBarnFullPage from '../images/burgerBarnFullPage.png'
+import BurgerBarnReducedPage from '../images/burgerBarnReducedPage.png'
+import BurgerBarnMobilePage from '../images/burgerBarnMobilePage.png'
+import EverstrikePage from '../images/everstrikePage.png'
+import EverstrikeStory from '../images/everstrikeStory.png'
+import EverstrikeLures from '../images/everstrikeLures.png'
+import '../components/fadein'
 
 export default function Home() {
   return (
     <>
-    <Navbar />
-    <div
-      style={{
-      marginInline: 'auto',
-      marginTop: '2rem', 
-      border: '2px solid royalblue', 
-      width: '90%',
-      paddingRight: '30rem'
-      }} 
-    />
     <div className="info-container">
+      <div style={{justifyContent: 'center', display: 'flex'}}>
+        <div style={{position: 'absolute', top: '1rem'}}>
+          <Navbar />
+        </div>
+      </div>
       <div id="personal-statement">
         <div id="personal-statement-container">
-          <h1>React Developer</h1>
-          <p style={{fontSize: '1.5rem'}}>
+          <h1 className='merriweather-regular'>React Developer</h1>
+          <p className='merriweather-regular' style={{fontSize: '1.5rem'}}>
             Hello, my name is Justin Schang. Im a passionate Front-end React devolper with a continued desire to improve my skills.
           </p>
           <div style={{display: 'inline-flex', gap: '8px', paddingTop: '1rem'}}>
@@ -53,32 +55,57 @@ export default function Home() {
           gap: '1rem', 
           paddingTop: '8rem'
           }}>
-          <h3>Tech Stack:</h3>
+          <h3 className='merriweather-regular'>Tech Stack:</h3>
           <img className="tech-stack-bubble" src={Html} alt="html" />
           <img className="tech-stack-bubble" src={Css} alt="css" />
           <img className="tech-stack-bubble" src={Javascript} alt="javascript" />
           <img className="tech-stack-bubble" src={ReactIcon} alt="react" />
           <img className="tech-stack-bubble" src={MySqlIcon} alt="mysql" />
-          <img className="tech-stack-bubble" src={Ruby} alt="ruby on rails" />
+          <img className="tech-stack-bubble" src={PhpIcon} alt="php" />
         </div>
       </div>
     </div>
     <div className='projects'>
-      <div style={{ justifyContent: 'center', marginBlock: '4rem', display: 'flex', gap: '1rem' }}>
-        <h1>Projects</h1>     
+      <div style={{ justifyContent: 'center', marginBlock: '4rem', display: 'flex', gap: '1rem', marginTop: '10rem' }}>
+        <h1 className='merriweather-regular'>Projects</h1>     
       </div>
       </div>
       <div id='projects-container' style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)' }}>
         <div style={{ display: 'grid', marginInline: 'auto' }}>
-          <h1>SecureTcg</h1>
+          <h1 className='merriweather-regular'>SecureTcg</h1>
           <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="/tcgsecure">
             <div id='secure-tcg-container' style={{ display: 'flex', gap: '1rem', paddingBlock: '2rem' }}>
-              <img id='tcg-secure-image1' src={TcgSecureImg} alt="linkedin" />
-              <img id='tcg-secure-image2' src={TcgSecureShopImg} alt="linkedin" />
-              <img id='tcg-secure-image3' src={TcgSecureCartImg} alt="linkedin" />
+              <img className='tcg-secure-image1' src={TcgSecureImg} alt="linkedin" />
+              <img className='tcg-secure-image2' src={TcgSecureShopImg} alt="linkedin" />
+              <img className='tcg-secure-image3' src={TcgSecureCartImg} alt="linkedin" />
             </div>
           </Link>
         </div>
+        <div style={{ display: 'grid', marginInline: 'auto' }}>
+          <h1 className='merriweather-regular'>Burger Barn</h1>
+          <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/burger-barn-landing-page/">
+            <div id='secure-tcg-container' style={{ display: 'flex', gap: '1rem', paddingBlock: '2rem' }}>
+              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image1' src={BurgerBarnFullPage} alt="linkedin" />
+              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image2' src={BurgerBarnReducedPage} alt="linkedin" />
+              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image3' src={BurgerBarnMobilePage} alt="linkedin" />
+            </div>
+          </Link>
+        </div>
+        <div style={{ display: 'grid', marginInline: 'auto' }}>
+          <h1 className='merriweather-regular'>Everstrike Lures</h1>
+          <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/everstike-lures/">
+            <div id='secure-tcg-container' style={{ display: 'flex', gap: '1rem', paddingBlock: '2rem' }}>
+              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image1' src={EverstrikePage} alt="linkedin" />
+              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image2' src={EverstrikeStory} alt="linkedin" />
+              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image3' src={EverstrikeLures} alt="linkedin" />
+            </div>
+          </Link>
+        </div>
+        <div style={{ justifyContent: 'center', marginTop: '4rem', display: 'flex', gap: '1rem' }}>  
+      </div>
+      <div>
+          <Contact />
+      </div>
       </div>
     </>
   )
