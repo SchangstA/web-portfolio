@@ -28,7 +28,7 @@ const Cart = () => {
 
   useEffect(() => {
     setTotalPrice(total.toFixed(2));
-  }, [cartItems]);
+  }, [cartItems, total]);
 
   const clearCart = () => {
     setCartItems([]);
