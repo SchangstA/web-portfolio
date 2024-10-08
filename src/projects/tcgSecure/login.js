@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import ShopBag from './tcgSecureImages/BxShoppingBag.svg';
 import LoginIcon from './tcgSecureImages/IonPersonSharp.svg';
 import ShoppingCart from './tcgSecureImages/BxCart.svg';

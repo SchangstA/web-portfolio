@@ -95,7 +95,7 @@ const Cart = () => {
                   <p>{item.Details}</p>
                   <p>{item.Price}</p>
                   <button onClick={() => removeItem(item.id)} style={{ border: 'none', background: '#ff4400a8', width: '2.8rem', height: '2.8rem', borderRadius: '50%' }}>
-                      <img id='remove-item-btn' style={{ size: '100%' }} src={Trashcan} />
+                      <img id='remove-item-btn' style={{ size: '100%' }} src={Trashcan} alt='remove-item-btn' />
                   </button>
                 </div>
               ))}

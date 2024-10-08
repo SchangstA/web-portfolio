@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Home from './pages/home'
 import TcgSecure from "./projects/tcgSecure/tcgSecure"
 import Shop from './projects/tcgSecure/shop'

@@ -23,9 +23,9 @@ const Navbar = () => {
       <div className={`menu ${isOpen ? 'open' : ''}`}>
         <ul className='links-display'>
           <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>Home</Link></li>
-          <li><Link to="/about" onClick={toggleMenu} className='merriweather-regular'>About</Link></li>
-          <li><Link to="/projects" onClick={toggleMenu} className='merriweather-regular'>Projects</Link></li>
-          <li><Link to="/contact" onClick={toggleMenu} className='merriweather-regular'>Contact</Link></li>
+          <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>About</Link></li>
+          <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>Projects</Link></li>
+          <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>Contact</Link></li>
         </ul>
       </div>
     </nav>

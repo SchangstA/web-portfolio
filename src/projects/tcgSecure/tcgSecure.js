@@ -169,7 +169,7 @@ export default function TcgSecure() {
           <div class="grid-block">
             <img class="img-container" 
               src="https://en.onepiece-cardgame.com/images/events/2024/championship/index/img_mv.png" 
-              alt="championship image" />
+              alt="championship" />
             <div class="text-container">
             <h2>2024 One Piece Card Game Championships</h2>
             <p>
