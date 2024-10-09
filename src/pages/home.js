@@ -73,7 +73,7 @@ export default function Home() {
       <div id='projects-container' style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)' }}>
         <div style={{ display: 'grid', marginInline: 'auto' }}>
           <h1 className='merriweather-regular'>SecureTcg</h1>
-          <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="/tcgsecure">
+          <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/tcgSecure/">
             <div id='secure-tcg-container' style={{ display: 'flex', gap: '1rem', paddingBlock: '2rem' }}>
               <img className='tcg-secure-image1' src={TcgSecureImg} alt="linkedin" />
               <img className='tcg-secure-image2' src={TcgSecureShopImg} alt="linkedin" />
