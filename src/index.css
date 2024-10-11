@@ -484,12 +484,29 @@ form button:hover {
 }
 
 @media (max-width: 576px) {
+  .hamburger-icon {
+    margin-top: 1.5rem;
+    position: fixed;
+    z-index: 999;
+    right: 5rem;
+  }
+
+  .self-portrait {
+    border-radius: 100rem;
+    background-image: url(./images/luffy-portrait.jpg);
+    background-position: 86rem -18rem;
+  }
+
   #personal-statement {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     text-align: center;
     margin-inline: auto;
     gap: 10%;
+  }
+
+  #personal-statement-container {
+    padding-top: 5rem;
   }
 
   #github-icon,
