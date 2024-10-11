@@ -127,6 +127,7 @@ a:focus {
   min-height: 20rem;
   border-radius: 100rem;
   background-image: url(./images/luffy-portrait.jpg);
+  background-position: 86rem -18rem;
 }
 
 #bubble-container {
@@ -509,6 +510,21 @@ form button:hover {
     padding-top: 0;
   }
 
+  #bubble-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    align-items: none;
+    justify-content: none; 
+    gap: 1rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    margin-inline: auto;
+    padding-left: 6rem;
+  }
+  #bubble-container > :nth-child(1) {
+    display: none; /* Hides the 1st child */
+  }
+
   .contact-form {
     max-width: 400px;
   }
@@ -522,6 +538,19 @@ form button:hover {
 }
 
 @media (max-width: 360px) {
+  .hamburger-icon {
+    margin-top: 1.5rem;
+    position: fixed;
+    z-index: 999;
+    right: 5rem;
+  }
+
+  .self-portrait {
+    border-radius: 100rem;
+    background-image: url(./images/luffy-portrait.jpg);
+    background-position: 86rem -18rem;
+  }
+
   #personal-statement {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -534,24 +563,9 @@ form button:hover {
     padding-top: 5rem;
   }
 
-  #bubble-container {
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr);
-    align-items: none;
-    justify-content: none; 
-    gap: 1rem;
-    padding-top: 8rem;
-    padding-bottom: 4rem;
-    margin-inline: auto;
-    padding-left: 3rem;
-  }
-  #bubble-container > :nth-child(1) {
-    display: none; /* Hides the 1st child */
-  }
-
   #projects-container {
     margin-inline: 0;
-    width: 22rem;
+    width: 100%;
   }
 
 .tcg-secure-image1--visible,
@@ -571,6 +585,10 @@ form button:hover {
   text-align: center;
   display: block;
   justify-content: center;
+}
+
+#bubble-container {
+  padding-left: 3rem;
 }
 
 .contact-form {
