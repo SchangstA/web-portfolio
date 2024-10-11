@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div>
         <Link to="/"  style={{color: 'black'}}>
-          <h1 className='merriweather-regular'>JSchang.dev</h1>
+          <h1 id='page-title' className='merriweather-regular'>JSchang.dev</h1>
         </Link>
       </div>
       <div className="hamburger-icon" onClick={toggleMenu}>

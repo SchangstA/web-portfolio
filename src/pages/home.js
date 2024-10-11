@@ -48,13 +48,7 @@ export default function Home() {
       </div> 
       </div>
       <div className="tech-stack" style={{ textAlign: 'center' }}>
-        <div style={{ 
-          display: 'inline-flex', 
-          alignItems: 'center', 
-          justifyContent: 'center', 
-          gap: '1rem', 
-          paddingTop: '8rem'
-          }}>
+        <div id='bubble-container'>
           <h3 className='merriweather-regular'>Tech Stack:</h3>
           <img className="tech-stack-bubble" src={Html} alt="html" />
           <img className="tech-stack-bubble" src={Css} alt="css" />
@@ -71,10 +65,10 @@ export default function Home() {
       </div>
       </div>
       <div id='projects-container' style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)' }}>
-        <div style={{ display: 'grid', marginInline: 'auto' }}>
+        <div style={{ display: 'grid', marginInline: 'auto', }}>
           <h1 className='merriweather-regular'>SecureTcg</h1>
           <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/tcgSecure/">
-            <div id='secure-tcg-container' style={{ display: 'flex', gap: '1rem', paddingBlock: '2rem' }}>
+            <div id='secure-tcg-container'>
               <img className='tcg-secure-image1' src={TcgSecureImg} alt="linkedin" />
               <img className='tcg-secure-image2' src={TcgSecureShopImg} alt="linkedin" />
               <img className='tcg-secure-image3' src={TcgSecureCartImg} alt="linkedin" />
