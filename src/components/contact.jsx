@@ -51,7 +51,7 @@ const contact = () => {
     </div >
         <form className='contact-form' onSubmit={onSubmit}>
             <div style={{ paddingBottom: '4rem' }}>
-              <h2 className='merriweather-regular'>Connect With Me</h2>
+              <h2 className='merriweather-regular' style={{ textDecoration: 'underline' }}>Connect With Me</h2>
             </div>
             <div className='input-box'>
                 <label className='merriweather-regular' style={{ fontWeight: 'bold' }}>Full Name</label>

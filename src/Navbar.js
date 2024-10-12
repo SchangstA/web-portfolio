@@ -7,7 +7,6 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <nav className="navbar">
       <div>
@@ -22,10 +21,9 @@ const Navbar = () => {
       </div>
       <div className={`menu ${isOpen ? 'open' : ''}`}>
         <ul className='links-display'>
-          <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>Home</Link></li>
-          <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>About</Link></li>
-          <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>Projects</Link></li>
-          <li><Link to="/" onClick={toggleMenu} className='merriweather-regular'>Contact</Link></li>
+          <a href='/' onClick={toggleMenu} className='merriweather-regular'><li>Home</li></a>
+          <a href='#projects' onClick={toggleMenu} className='merriweather-regular'><li>Projects</li></a>
+          <a href='#contact' onClick={toggleMenu} className='merriweather-regular'><li>Contact</li></a>
         </ul>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import Contact from '../components/contact'
 import Navbar from '../Navbar'
@@ -23,7 +23,7 @@ export default function Home() {
     <>
     <div className="info-container">
       <div style={{justifyContent: 'center', display: 'flex'}}>
-        <div style={{position: 'absolute', top: '1rem'}}>
+        <div style={{position: 'absolute', top: '1rem', display: 'flex'}}>
           <Navbar />
         </div>
       </div>
@@ -56,15 +56,15 @@ export default function Home() {
         </div>
       </div>
     </div>
-    <div className='projects'>
-      <div style={{ justifyContent: 'center', marginBlock: '4rem', display: 'flex', gap: '1rem', marginTop: '10rem' }}>
-        <h1 className='merriweather-regular'>Projects</h1>     
+    <div className='projects' id='projects'>
+      <div style={{ justifyContent: 'center', marginBottom: '4rem', display: 'flex', gap: '1rem', marginTop: '12rem' }}> {/*-----------------------------*/}
+        <h1 style={{ textDecoration: 'underline' }} className='merriweather-regular'>Projects</h1>     
       </div>
       </div>
       <div id='projects-container' style={{ display: 'grid', gridTemplateColumns: 'repeat(1, 1fr)' }}>
         <div style={{ display: 'grid', marginInline: 'auto', }}>
           <h1 className='merriweather-regular'>SecureTcg</h1>
-          <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/tcgSecure/">
+          <Link style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/tcgSecure/">
             <div id='secure-tcg-container'>
               <img className='tcg-secure-image1' src={TcgSecureImg} alt="linkedin" />
               <img className='tcg-secure-image2' src={TcgSecureShopImg} alt="linkedin" />
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         <div style={{ justifyContent: 'center', marginTop: '4rem', display: 'flex', gap: '1rem' }}>  
       </div>
-      <div>
+      <div id='contact' style={{ marginBottom: '1rem' }}>
           <Contact />
       </div>
       </div>
