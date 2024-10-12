@@ -181,6 +181,14 @@ a:focus {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.project-info-block {
+  background: rgb(136,136,136);
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(109, 105, 105, 0.192) 50%, rgb(255, 255, 255) 100%);
+  border-radius: 8px;
+  margin-inline: 30%;
+  font-size: 1.5rem;
+}
+
 /* contact form */
 
 .contact {
@@ -404,6 +412,11 @@ form button:hover {
   .tcg-secure-image3 {
     display: none;
   }
+
+  .project-info-block {
+    margin-inline: 20%;
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 992px) {
@@ -484,6 +497,11 @@ form button:hover {
   .menu.open ul li {
     margin-bottom: 1rem;
   }
+
+  .project-info-block {
+    margin-inline: 10%;
+    font-size: 1.3rem;
+  }
 }
 
 /* media 576 */
@@ -525,6 +543,11 @@ form button:hover {
 
   #secure-tcg-container {
     padding-top: 0;
+  }
+
+  .project-info-block {
+    margin-inline: 10%;
+    font-size: 1rem;
   }
 
   .navbar {

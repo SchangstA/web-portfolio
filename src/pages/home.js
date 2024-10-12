@@ -13,9 +13,6 @@ import PhpIcon from "../images/MdiLanguagePhp.svg"
 import TcgSecureImg from '../images/SecureTcgImage.png'
 import TcgSecureShopImg from '../images/TcgSecureShopImage.png'
 import TcgSecureCartImg from '../images/TcgSecureCartImage.png'
-import BurgerBarnFullPage from '../images/burgerBarnFullPage.png'
-import BurgerBarnReducedPage from '../images/burgerBarnReducedPage.png'
-import BurgerBarnMobilePage from '../images/burgerBarnMobilePage.png'
 import EverstrikePage from '../images/everstrikePage.png'
 import EverstrikeStory from '../images/everstrikeStory.png'
 import EverstrikeLures from '../images/everstrikeLures.png'
@@ -75,16 +72,10 @@ export default function Home() {
             </div>
           </Link>
         </div>
-        <div style={{ display: 'grid', marginInline: 'auto' }}>
-          <h1 className='merriweather-regular'>Burger Barn</h1>
-          <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/burger-barn-landing-page/">
-            <div id='secure-tcg-container' style={{ display: 'flex', gap: '1rem', paddingBlock: '2rem' }}>
-              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image1' src={BurgerBarnFullPage} alt="linkedin" />
-              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image2' src={BurgerBarnReducedPage} alt="linkedin" />
-              <img style={{ maxHeight: '37rem' }} className='tcg-secure-image3' src={BurgerBarnMobilePage} alt="linkedin" />
-            </div>
-          </Link>
-        </div>
+          <div className='project-info-block'>
+            <p style={{ marginInline: '2rem', textAlign: 'center' }}>SecureTCG is a multi-page trading card game shop using React, CSS3, and JSON. Created with responsive design in mind utilizing Flexbox and Grid.
+             Components that dynamically populate in-stock products, along with a functional "Add to Cart" feature.</p>
+          </div>
         <div style={{ display: 'grid', marginInline: 'auto' }}>
           <h1 className='merriweather-regular'>Everstrike Lures</h1>
           <Link onClick={() => window.scrollTo({ top: 0 })} style={{ display: 'flex', marginInline: 'auto' }} to="https://schangsta.github.io/everstike-lures/">
@@ -95,6 +86,10 @@ export default function Home() {
             </div>
           </Link>
         </div>
+          <div className='project-info-block'>
+            <p style={{ marginInline: '2rem', textAlign: 'center' }}>Everstrike Lures is a single-page webpage with a focus on CSS animations and responsive 	design.
+              I chose to showcase my ability to use media queries to create a fully adaptable layout and developed a mobile-friendly hamburger menu for easy navigation.</p>
+          </div>
         <div style={{ justifyContent: 'center', marginTop: '4rem', display: 'flex', gap: '1rem' }}>  
       </div>
       <div>
