@@ -547,12 +547,22 @@ form button:hover {
   }
 
   .contact-form {
-    max-width: 400px;
+    max-width: 300px;
+    padding: 2px 10px 10px;
+    border-radius: 8px;
+    box-shadow: none;
+    color: #333;
+    margin: 0;
+    border: none;
+  }
+  
+  .area{
+    display: none;
   }
 
   .input-box .field-message {
     height: 200px;
-    width: 345px;
+    width: 275px;
     resize: none;
     padding: 15px;
   }
@@ -611,26 +621,5 @@ form button:hover {
 
 #bubble-container {
   padding-left: 3rem;
-}
-
-.contact-form {
-  max-width: 300px;
-  padding: 2px 10px 10px;
-  border-radius: 8px;
-  box-shadow: none;
-  color: #333;
-  margin: 0;
-  border: none;
-}
-
-.area{
-  display: none;
-}
-
-.input-box .field-message {
-  height: 200px;
-  width: 275px;
-  resize: none;
-  padding: 15px;
 }
 }
