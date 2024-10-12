@@ -540,7 +540,7 @@ form button:hover {
     padding-top: 8rem;
     padding-bottom: 4rem;
     margin-inline: auto;
-    padding-left: 6rem;
+    margin-left: 10%;
   }
   #bubble-container > :nth-child(1) {
     display: none; /* Hides the 1st child */
@@ -617,9 +617,5 @@ form button:hover {
   text-align: center;
   display: block;
   justify-content: center;
-}
-
-#bubble-container {
-  padding-left: 3rem;
 }
 }
