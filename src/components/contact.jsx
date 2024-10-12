@@ -32,6 +32,7 @@ const contact = () => {
       };
 
   return (
+    <>
     <div>
       <section className='contact'>
       <div class="area" >
@@ -68,6 +69,7 @@ const contact = () => {
         </form>
       </section>
     </div>
+    </>
   )
 }
 
