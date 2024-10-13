@@ -83,6 +83,10 @@ a:focus {
   color: royalblue;
 }
 
+.hidden {
+  display: none;
+}
+
 /* navbar */
 .navbar {
   display: flex;
@@ -133,9 +137,13 @@ a:focus {
 #bubble-container {
   display: inline-flex; 
   align-items: center;
-  justify-content: center; 
   gap: 1rem;
   padding-top: 8rem;
+}
+
+#tech-stack {
+  text-align: center;
+  margin-left: 1rem;
 }
 
 .tech-stack-bubble {
@@ -143,6 +151,12 @@ a:focus {
   border-radius: 4px;
   background-color: whitesmoke;
   box-shadow: 1px 1px rgba(160, 160, 160, 0.603);
+}
+
+.tech-label {
+  font-size: 16px;
+  text-align: left;
+  color: whitesmoke;
 }
 
 /* portfolio projects */
@@ -561,16 +575,25 @@ form button:hover {
   #bubble-container {
     display: grid; 
     grid-template-columns: repeat(3, 1fr);
-    align-items: none;
-    justify-content: none; 
     gap: 1rem;
     padding-top: 8rem;
     padding-bottom: 4rem;
-    margin-inline: auto;
-    margin-left: 10%;
   }
   #bubble-container > :nth-child(1) {
     display: none; /* Hides the 1st child */
+  }
+
+  .tech-stack-bubble {
+    display: block;
+    margin-inline: auto;
+  }
+
+  .tech-label {
+    text-align: center;
+  }
+
+  .hidden {
+    display: block;
   }
 
   .contact-form {

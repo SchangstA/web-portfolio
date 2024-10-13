@@ -44,15 +44,16 @@ export default function Home() {
         </div>
       </div> 
       </div>
-      <div className="tech-stack" style={{ textAlign: 'center' }}>
+      <div id='tech-stack'>
         <div id='bubble-container'>
           <h3 className='merriweather-regular'>Tech Stack:</h3>
-          <img className="tech-stack-bubble" src={Html} alt="html" />
-          <img className="tech-stack-bubble" src={Css} alt="css" />
-          <img className="tech-stack-bubble" src={Javascript} alt="javascript" />
-          <img className="tech-stack-bubble" src={ReactIcon} alt="react" />
-          <img className="tech-stack-bubble" src={MySqlIcon} alt="mysql" />
-          <img className="tech-stack-bubble" src={PhpIcon} alt="php" />
+          <label className='tech-label'><img className="tech-stack-bubble" src={Html} alt="html" /><span className='hidden'>HTML</span></label>
+          <label className='tech-label'><img className="tech-stack-bubble" src={Css} alt="css" /><span className='hidden'>CSS</span></label>
+          <label className='tech-label'><img className="tech-stack-bubble" src={Javascript} alt="javascript" /><span className='hidden'>Javascript</span></label>
+          <label className='tech-label'><img className="tech-stack-bubble" src={ReactIcon} alt="react" /><span className='hidden'>REACT</span></label>
+          <label className='tech-label'><img className="tech-stack-bubble" src={MySqlIcon} alt="mysql" /><span className='hidden'>MySQL</span></label>
+          <label className='tech-label'><img className="tech-stack-bubble" src={PhpIcon} alt="php" /><span className='hidden'>PHP</span></label>
+          
         </div>
       </div>
     </div>
